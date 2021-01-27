@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan 25 14:31:37 2021
+
+@author: User
+"""
+
+FROM MCPI.MINECRAFT IMPORT MINECRAFT AS MC
+IMPORT TIME
+MCS X,Y,Z = MCS.PLAYER.GETPOS()
+I=0
+WHILE I<5:
+    MCS.PLAYER.SETPOS(X,Y,Z)
+    TIME SLEEP(2.5)
+    Y=Y-10
